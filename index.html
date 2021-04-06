@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bas van Iterson | Challenge 2 | Space X</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon_logo.svg" type="image/svg" width="100%">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script> <!--Geocoder assets-->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+    <script src="https://algorithmia.com/v1/clients/js/algorithmia-0.2.1.js" type="text/javascript"></script> <!--Height api-->
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!--  Dit is een CSS3 animatie library dus heb nagekeken of ik dit kon gebruiken volgens de richtlijnen.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="animate__animated animate__slideInUp animate-slider" id="intro-slider">
+        <img class="logo_animate" src="images/logo_spaceX.svg">
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">
+          <img class="logo" src="images/logo_spaceX.svg">
+        </a>
+        <a href="#">Arrival</a>
+        <a href="#">Mission</a>
+        <a href="#">World</a>
+        <a href="#">Survival</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="grid-container">
+        <div class="information-column">
+          <div id="options">
+            <img class="flag" id="flag" src="images\flag.svg">
+            <div class="option-item"><p>People: </p><p id="people"></p></div>
+            <div class="option-item"><p>Languages: </p><p id="languages"></p></div>
+            <div class="option-item"><p>Currency: </p><p id="currency"></p></div>
+            <div class="option-item"><p>Timezone: </p><p id="timezone"></p></div>
+          </div>
+          <div id="location">
+            <div class="location-item"><p>Location:</p><p id="city"></p></div>
+            <div class="location-item"><p>Longitude:</p><p id="long"></p></div>
+            <div class="location-item"><p>latitude:</p><p id="lat"></p></div>
+          </div>
+        </div>
+        <div class="map-column">
+          <div id="map"></div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

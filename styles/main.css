@@ -220,7 +220,6 @@ div:after{
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 0px;
-    max-height: 70vh;
   }
 
   .information-column{
